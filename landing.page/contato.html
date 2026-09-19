@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato - Clarisse Vaz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+
+        <a href="curriculo.html">
+            <i class="fa-solid fa-file"></i>
+            Currículo
+        </a>
+
+        <a href="github.html">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+        </a>
+
+        <a href="servicos.html">
+            <i class="fa-solid fa-laptop-code"></i>
+            Serviços
+        </a>
+
+        <a href="contato.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contatos
+        </a>
+    </nav>
+
+    <main>
+
+        <h1>Entre em contato</h1>
+
+        <p>
+            Preencha o formulário abaixo para solicitar uma proposta.
+        </p>
+
+    </main>
+
+    <form>
+
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome">
+
+
+
+<label for="telefone">Telefone:</label>
+<input type="tel" id="telefone" name="telefone">
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email">
+
+
+<label for="tipo">Você é:</label>
+
+<select id="tipo" name="tipo">
+    <option value="">Selecione</option>
+    <option value="pessoa">Pessoa</option>
+    <option value="empresa">Empresa</option>
+</select>
+
+<label for="servico">Serviço desejado:</label>
+
+<select id="servico" name="servico">
+    <option value="">Selecione um serviço</option>
+    <option value="site">Site institucional</option>
+    <option value="dinamico">Site dinâmico</option>
+    <option value="avancado">Site avançado</option>
+</select>
+
+<label for="horario">Melhor horário para contato:</label>
+
+<select id="horario" name="horario">
+    <option value="">Selecione</option>
+    <option value="manha">Manhã</option>
+    <option value="tarde">Tarde</option>
+    <option value="noite">Noite</option>
+</select>
+
+<label for="descricao">Conte um pouco sobre seu projeto:</label>
+
+<textarea id="descricao" name="descricao" rows="5"></textarea>
+
+<label>
+    <input type="checkbox" name="contato">
+    Aceito receber contato sobre o orçamento.
+</label>
+
+<button type="submit">Enviar solicitação</button>
+
+</form>
+
+
+
+</body>
+</html>
