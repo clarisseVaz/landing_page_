@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clarisse Vaz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="imagens/favicon-32x32.png">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+
+        <a href="curriculo.html">
+            <i class="fa-solid fa-file"></i>
+            Currículo
+        </a>
+
+        <a href="github.html">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+        </a>
+
+        <a href="servicos.html">
+            <i class="fa-solid fa-laptop-code"></i>
+            Serviços
+        </a>
+
+        <a href="contato.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contatos
+        </a>
+
+    </nav>
+
+
+    <main>
+
+        <section class="inicio">
+
+            <div class="texto-inicio">
+
+                <p>OLÁ, EU SOU A</p>
+
+                <h1>Clarisse Vaz</h1>
+
+                <h2>Ciência da Computação - Tecnologia - Web</h2>
+
+                <p>
+                    Sou estudante de Ciência da Computação, apaixonada
+                    por tecnologia e pelo desenvolvimento de soluções.
+                    Estou construindo minha trajetória na área, explorando novos conhecimentos e desenvolvendo projetos ao longo da minha formação. 
+                </p>
+
+                <div class="botoes-inicio">
+
+                    <a href="https://www.linkedin.com/in/clarisse-vaz-0393b6333" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        Conheça meu LinkedIn
+                    </a>
+
+                    <a href="contato.html">
+                        <i class="fa-solid fa-envelope"></i>
+                        Entre em contato
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="foto-inicio">
+
+                <img src="imagens/Clarisse.jpg" alt="Foto de Clarisse Vaz">
+
+            </div>
+
+        </section>
+
+
+        <section class="destaques">
+
+            <div class="card-destaque">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h2>Acadêmico</h2>
+
+                <p>
+                    Estudante de Ciência da Computação na Universidade Vila Velha,
+                    desenvolvendo conhecimentos em tecnologia.
+            
+                 </p>
+
+            </div>
+
+
+            <div class="card-destaque">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h2>Tecnologia</h2>
+
+                <p>
+                    Interesse em desenvolvimento web, dados,
+                    sistemas e criação de soluções tecnológicas.
+                </p>
+
+            </div>
+
+
+            <div class="card-destaque">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <h2>Aprendizado</h2>
+
+                <p>
+                    Gosto de aprender coisas novas, resolver problemas
+                    e transformar ideias em projetos.
+                </p>
+
+            </div>
+
+        </section>
+
+<button id="mostrarInteresses">
+    <i class="fa-solid fa-chevron-down"></i>
+    Ver meus interesses
+</button>
+
+<section class="interesses" id="interesses">
+
+    <h2>Um pouco sobre mim</h2>
+
+    <p>
+        Fora da tecnologia, também gosto de aproveitar meu tempo
+        com filmes, música, jogos de raciocínio e atividades físicas.
+        Estou sempre aberta a conhecer novos interesses e aprender coisas novas.
+    </p>
+
+    <div class="lista-interesses">
+
+        <div>
+            <i class="fa-solid fa-film"></i>
+            <h3>Filmes</h3>
+            <p>Sociedade dos Poetas Mortos, Mamma mia...</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-music"></i>
+            <h3>Música</h3>
+            <p> Sertanejo, rock, MPB...</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-chess"></i>
+            <h3>Hobbies</h3>
+            <p>Xadrez e Sudoku</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-volleyball"></i>
+            <h3>Esportes</h3>
+            <p>Academia, beach tennis e futevôlei</p>
+        </div>
+
+    </div>
+
+    <div class="musica">
+
+        <h3>
+            <i class="fa-solid fa-headphones"></i>
+            Uma música que gosto
+        </h3>
+
+        <iframe
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/1fa1CGNcZTB1HYh4ut8nb3?utm_source=generator"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+    </section>
+
+    <script>
+
+    const botao = document.getElementById("mostrarInteresses");
+    const interesses = document.getElementById("interesses");
+
+    botao.addEventListener("click", function() {
+
+        if (interesses.style.display === "block") {
+
+            interesses.style.display = "none";
+
+            botao.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Ver meus interesses';
+
+        } else {
+
+            interesses.style.display = "block";
+
+            botao.innerHTML = '<i class="fa-solid fa-chevron-up"></i> Ocultar interesses';
+
+        }
+
+    });
+
+</script>
+
+    </main>   
+   
+</body>
+
+</html>
