@@ -1,0 +1,623 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F4EF;
+    color: #172B4D;
+    margin: 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    background-color: #172B4D;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C6A46C;
+}
+
+nav a i {
+    margin-right: 6px;
+}
+
+
+/* =========================
+   INSTAGRAM NO TOPO
+========================= */
+
+.instagram-topo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
+}
+
+.instagram-topo a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.instagram-topo i {
+    margin-right: 5px;
+    color: #C6A46C;
+}
+
+.instagram-topo a:hover {
+    color: #C6A46C;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.inicio {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    text-align: left;
+}
+
+.texto-inicio {
+    max-width: 650px;
+}
+
+.texto-inicio p:first-child {
+    color: #C6A46C;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.texto-inicio h1 {
+    font-size: 64px;
+    margin: 0 0 10px;
+    color: #172B4D;
+}
+
+.texto-inicio h2 {
+    font-size: 23px;
+    font-weight: normal;
+    margin: 0 0 25px;
+    color: #C6A46C;
+}
+
+.texto-inicio p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   FOTO DA HOME
+========================= */
+
+.foto-inicio {
+    flex-shrink: 0;
+}
+
+.foto-inicio img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 10px 30px rgba(23, 43, 77, 0.18);
+}
+
+
+/* =========================
+   BOTÕES DA HOME
+========================= */
+
+.botoes-inicio {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.botoes-inicio a {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 8px;
+    background-color: #172B4D;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botoes-inicio a:hover {
+    background-color: #C6A46C;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   CARDS DE DESTAQUE
+========================= */
+
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 30px 0 50px;
+}
+
+.card-destaque {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(23, 43, 77, 0.10);
+    transition: 0.3s;
+}
+
+.card-destaque:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(23, 43, 77, 0.16);
+}
+
+.card-destaque i {
+    font-size: 32px;
+    color: #C6A46C;
+    margin-bottom: 10px;
+}
+
+.card-destaque h2 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.card-destaque p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SEÇÃO SOBRE
+========================= */
+
+.sobre {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(23, 43, 77, 0.10);
+}
+
+.sobre h2 {
+    color: #172B4D;
+}
+
+.sobre ul {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 2;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+main a {
+    color: #172B4D;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #C6A46C;
+}
+
+
+/* =========================
+   FORMULÁRIO DE CONTATO
+========================= */
+
+form {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(23, 43, 77, 0.10);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #D8D5CF;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #FDFCFA;
+    color: #172B4D;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #C6A46C;
+    box-shadow: 0 0 0 2px rgba(198, 164, 108, 0.15);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 8px;
+}
+
+form button {
+    margin-top: 25px;
+    padding: 13px 25px;
+    background-color: #172B4D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #C6A46C;
+}
+
+
+/* =========================
+   CURRÍCULO
+========================= */
+
+.curriculo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 25px rgba(23, 43, 77, 0.12);
+    text-align: left;
+}
+
+.curriculo h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.curriculo > p {
+    text-align: center;
+}
+
+.curriculo h2 {
+    border-bottom: 2px solid #C6A46C;
+    padding-bottom: 8px;
+    margin-top: 40px;
+}
+
+.curriculo section {
+    margin-bottom: 30px;
+}
+
+.curriculo ul {
+    line-height: 2;
+}
+
+
+/* =========================
+   TABELAS
+========================= */
+
+table {
+    width: 100%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(23, 43, 77, 0.10);
+}
+
+th,
+td {
+    padding: 18px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #172B4D;
+    color: white;
+}
+
+tr:hover {
+    background-color: #F7F4EF;
+}
+
+
+/* =========================
+   BOTÃO DE INTERESSES
+========================= */
+
+#mostrarInteresses {
+    margin: 10px 0 30px;
+    padding: 12px 22px;
+    border: none;
+    border-bottom: 2px solid #C6A46C;
+    background-color: transparent;
+    color: #172B4D;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#mostrarInteresses i {
+    color: #C6A46C;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+
+#mostrarInteresses:hover {
+    color: #C6A46C;
+}
+
+
+/* =========================
+   SEÇÃO DE INTERESSES
+========================= */
+
+.interesses {
+    display: none;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    margin: 25px 0 40px;
+    box-shadow: 0 5px 20px rgba(23, 43, 77, 0.10);
+    text-align: center;
+}
+
+.interesses h2 {
+    margin-top: 0;
+    color: #172B4D;
+}
+
+.interesses > p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+
+/* =========================
+   CARDS DOS INTERESSES
+========================= */
+
+.lista-interesses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.lista-interesses div {
+    padding: 25px;
+    background-color: #F7F4EF;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.lista-interesses div:hover {
+    transform: translateY(-5px);
+}
+
+.lista-interesses i {
+    font-size: 28px;
+    color: #C6A46C;
+}
+
+.lista-interesses h3 {
+    color: #172B4D;
+    margin: 12px 0 8px;
+}
+
+.lista-interesses p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* =========================
+   SPOTIFY
+========================= */
+
+.musica {
+    max-width: 700px;
+    margin: 30px auto 0;
+}
+
+.musica h3 {
+    color: #172B4D;
+    margin-bottom: 15px;
+}
+
+.musica h3 i {
+    color: #C6A46C;
+    margin-right: 8px;
+}
+
+.musica iframe {
+    display: block;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .instagram-topo {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .texto-inicio h1 {
+        font-size: 45px;
+    }
+
+    .texto-inicio h2 {
+        font-size: 20px;
+    }
+
+    .foto-inicio img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .botoes-inicio {
+        justify-content: center;
+    }
+
+    .destaques {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-interesses {
+        grid-template-columns: 1fr;
+    }
+
+    .interesses {
+        padding: 25px 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px 6px;
+    }
+
+    .curriculo {
+        padding: 35px 25px;
+    }
+}
+/*=================
+GITHUB MAOZINHA 
+=================*/
+.github-logo {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.github-logo:hover {
+  transform: scale(1.05); 
+  opacity: 0.8;     
+}
+
+/*=================
+GITHUB LINK
+=================*/
+.github-logo {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.github-logo:hover {
+  transform: scale(1.08); /* Efeito de zoom ao passar o rato */
+}
+
+.btn-github {
+  padding: 12px 24px;
+  background-color: #24292e; /* Cor escura padrão do GitHub */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-github:hover {
+  background-color: #000000;
+}
